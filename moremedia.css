@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    background-color: aqua;
+    flex-wrap: wrap;
+
+}
+.item{
+    background-color: blue;
+    flex-grow: 1;
+}
+.para{
+    background-color: chartreuse;
+    flex-grow: 3;
+    padding: 20px;
+}
+@media (max-width:750px and min-width:500px){
+    .item{
+        diplay:inline-block;
+    }
+
+}
