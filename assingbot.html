@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<style>
+
+@keyframes forimg{
+    0%{
+        margin-top: 10px;
+        width: 20%;
+        
+    }
+    25%{
+        margin-top: 15px;
+        width: 22.5%
+    }
+    37.5%{
+        margin-top: 17.5px;
+        width: 23.75%
+    }
+    50%{
+        margin-top: 20px;
+        width: 25%
+    }
+    75%{
+        margin-top: 25px;
+        width: 27.5%
+    }
+    87.5%{
+        margin-top: 27.5px;
+        width: 28.75%
+    }
+    100%{
+        margin-top: 30px;
+        width: 30%
+    }
+}
+#img1{
+    top: 10px;
+    left: 500px;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: forimg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; 
+   
+
+}
+
+</style>
+</head>
+<body>
+    <img  id="img1"src="C:\Users\DELL PC\Downloads\coding blocks.png"></img>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+  <label id="span1" class="span">NAME-</label>
+<input id="ip1" class="form-control" placeholder="YOUR NAME">
+
+    </div>
+    <div class="form-group">
+<label id="span2" class="span">FATHERS NAME-</label>
+
+<input id="ip2" class="form-control" placeholder="FATHER NAME">
+</div>
+<div class="form-group">
+<label id="span3" class="span">COLLEGE NAME-</label>
+
+<input id="ip3" class="form-control" placeholder="COLLEGE NAME">
+</div>
+<div class="form-group">
+<label id="span4" class="span">DATE OF BIRTH-</label>
+<input id="ip4" class="form-control" type="date">
+</div>
+<div class="form-group">
+<label id="span5" class="span">PHONE NO:-</label>
+
+  <input id="ip5" class="form-control" type="number">
+  </div>
+  <div class="form-group ">
+        <span id="span6" class="span">GENDER-</span>
+         <br>
+
+        <span id="spana" class="span0" >MALE</span><input type="radio" name="q">
+        <span id="spanb" class="span0">FEMALE</span><input type="radio" name="q">
+        <span id="spanc" class="span0">OTHERS</span><input type="radio" name="q">
+        
+
+</div>
+<div class="form-group ">
+<label id="span7" class="span">COURSE NAME-</label>
+<br><select multiple class="form-control" id="select1" >
+  <option id="option1" class="option">Machine learning </option>
+  <option id="option2" class="option">java</option>
+  <option id="option3" class="option">C</option>
+  <option id="option4" class="option">C++</option>
+  <option id="option5" class="option">Web devlopment</option>
+</select>
+</div>
+<div class="form-group ">
+<span id="spant" class="span"  >ACADEMICS</span>
+<table  id="table1" border="3px" cellspacing="10px" cellpadding="10px">
+  <tr>
+      <td>STANDARD</td>
+      <td>B-tech</td>
+      <td>12th</td>
+      <td>10th</td>
+  </tr>
+  <tr>
+          <td>MARKS</td>
+          <td><input type="number"></td>
+          <td><input type="number"></td>
+          <td><input type="number"></td>
+      
+  </tr>
+
+</table>
+</div>
+<div class="form-group ">
+<label id="span8" class="span">BOARD OF 12th-</label>
+<br>
+<select id="select2" class="form-control">
+  <option id="option6" class="option">CBSE</option>
+  <option id="option7" class="option">ICSE</option>
+  <option id="option8" class="option">OTHER</option>
+</select>
+</div>
+<div class="form-group ">
+<label id="span9" class="span">BOARD OF 10th-</label>
+<select id="select3" class="form-control">
+  <option id="option9" class="option">CBSE</option>
+  <option id="option10" class="option">ICSE</option>
+  <option id="option11" class="option">OTHER</option>
+</select>
+</div>
+<span id="span10" class="span">SUBJECTS IN 12TH-</span>
+<br>
+<br>
+<span id="span11" class="span01">MATHS-</span>
+<input type="checkbox" class="ipa">
+<br>
+<span id="span12" class="span01">PHYSICS-</span>
+<input type="checkbox" class="ipa">
+<br>
+<span id="span13" class="span01">CHEMISTRY-</span>
+<input type="checkbox" class="ipa">
+<br>
+<span id="span14" class="span01">BIOLOGY-</span>
+<input type="checkbox" class="ipa">
+<br>
+<br>
+<span id="span15" class="span">WHO REFFERED YOU CODING BLOCKS-</span>
+<br>
+<span id="span16" class="span02">FRIEND-</span>
+<input type="checkbox">
+<br>
+<span id="span17" class="span02">TEACHER-</span>
+<input type="checkbox">
+<br>
+<span id="span18" class="span02">NEWS PAPER-</span>
+<input type="checkbox">
+<br>
+<span id="span19" class="span02">OTHER-</span>
+<input type="checkbox">
+<br>
+<br>
+<div class="form-group ">
+<label id="span20" class="span">PHOTO-</label><br>
+<input id="ip6" class="form-control-file" type="file">
+</div>
+<div class="form-group ">
+<label id="span21" class="span">SIGNATURE-</label>
+<br>
+<input id="ip7" class="form-control-file" type="file">
+</div>
+I HEREBY DECLARE THAT ALL THE INFORMATION ABOVE IS CORRECT
+<input type="radio">
+
+
+
+
+  
+
+</body>
+</html>
